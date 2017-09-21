@@ -12,6 +12,10 @@
     <servlet-name>PreflightedRequestHandler</servlet-name>
     <servlet-class>idv.jackblackevo.PreflightedRequestServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>CredentialedRequestHandler</servlet-name>
+    <servlet-class>idv.jackblackevo.CredentialedRequestServlet</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>SimpleRequestHandler</servlet-name>
@@ -20,5 +24,9 @@
   <servlet-mapping>
     <servlet-name>PreflightedRequestHandler</servlet-name>
     <url-pattern>/PreflightedRequestHandler</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CredentialedRequestHandler</servlet-name>
+    <url-pattern>/CredentialedRequestHandler</url-pattern>
   </servlet-mapping>
 </web-app>
