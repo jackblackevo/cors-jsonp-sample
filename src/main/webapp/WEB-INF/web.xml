@@ -8,9 +8,17 @@
     <servlet-name>SimpleRequestHandler</servlet-name>
     <servlet-class>idv.jackblackevo.SimpleRequestServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>PreflightedRequestHandler</servlet-name>
+    <servlet-class>idv.jackblackevo.PreflightedRequestServlet</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>SimpleRequestHandler</servlet-name>
     <url-pattern>/SimpleRequestHandler</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PreflightedRequestHandler</servlet-name>
+    <url-pattern>/PreflightedRequestHandler</url-pattern>
   </servlet-mapping>
 </web-app>
