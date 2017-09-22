@@ -16,6 +16,10 @@
     <servlet-name>CredentialedRequestHandler</servlet-name>
     <servlet-class>idv.jackblackevo.CredentialedRequestServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>JSONPRequestHandler</servlet-name>
+    <servlet-class>idv.jackblackevo.JSONPRequestServlet</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>SimpleRequestHandler</servlet-name>
@@ -28,5 +32,9 @@
   <servlet-mapping>
     <servlet-name>CredentialedRequestHandler</servlet-name>
     <url-pattern>/CredentialedRequestHandler</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JSONPRequestHandler</servlet-name>
+    <url-pattern>/JSONPRequestHandler</url-pattern>
   </servlet-mapping>
 </web-app>
